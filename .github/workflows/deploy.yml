@@ -31,4 +31,4 @@ jobs:
           docker compose down
           docker compose up -d --build 2>&1 1>/dev/null
           exit
-          EOF
+        EOF

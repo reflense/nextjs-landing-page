@@ -25,11 +25,11 @@ jobs:
       run: |
         ssh -tt -i ec2_key.pem -o StrictHostKeyChecking=no $EC2_USER@$EC2_HOST "\
           cd ~/data && \
-          sudo rm -rf nextjs-landing-page \
-          git clone --branch main --depth 1 git@github.com:reflense/reflense.git \
-          cd reflense \
-          git pull origin main \
-          docker compose down \
-          docker compose up -d --build 2>&1 1>/dev/null \
+          sudo rm -rf nextjs-landing-page && \
+          git clone --branch main --depth 1 git@github.com:reflense/nextjs-landing-page.git && \
+          cd nextjs-landing-page && \
+          git pull origin main && \
+          docker compose down && \
+          docker compose up -d --build 2>&1 1>/dev/null && \
           exit
         "

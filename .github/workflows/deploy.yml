@@ -24,5 +24,6 @@ jobs:
         EC2_USER: ${{ secrets.EC2_USER }}
       run: |
         ssh -tt -i ec2_key.pem -o StrictHostKeyChecking=no $EC2_USER@$EC2_HOST "\
-        cd ~/data && \
-        sudo rm -rf nextjs-landing-page \"
+          cd ~/data && \
+          sudo rm -rf nextjs-landing-page \
+        "

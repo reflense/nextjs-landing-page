@@ -1,9 +1,96 @@
+import "../app/style.css";
 import Image from "next/image";
+import image1 from "../../public/images/section1 right.svg";
+import illustration2 from "../../public/images/section 2 1.svg";
+import illustration3 from "../../public/images/section 2 2.svg";
+import illustration4 from "../../public/images/section 2 3.svg";
+import illustration5 from "../../public/images/section 2 4.svg";
+import illustration6 from "../../public/images/section 2 5.svg";
+import illustration7 from "../../public/images/section 3 1.svg";
+import illustration8 from "../../public/images/section 3 2.svg";
+import illustration9 from "../../public/images/section 3 3.svg";
+import illustration10 from "../../public/images/section 3 4.svg";
+import illustration11 from "../../public/images/section 3 5.svg";
+import logo from "../../public/images/Reflense (1).svg";
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+    <main className="flex min-h-screen flex-col items-center justify-between  overflow-x-hidden">
+
+      <header className="flex w-full pt-10 px-10"><Image
+        src={logo}
+        alt="Vercel Logo"
+        className="dark:invert mb-10"
+        width={150}
+        height={100}
+        priority
+      /></header>
+
+      <section className="flex mt-10  w-screen px-20 mb-20">
+        <div className="w-6/12  h-96 flex flex-col justify-center items-center gap-5">
+          <p className="text-center font-black  text-3xl">Expand your<br></br> recruitment network <br></br>and find the perfect fit</p>
+          <button className="bg-blue-600 text-2xl px-6 py-2 rounded-full text-white bold " style={{ backgroundColor: "#042D62" }}>Let's Start Today</button>
+        </div>
+        <div className="w-6/12  h-96 flex justify-center">
+          <Image src="/images/section1 right.svg" alt="avc"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: '100%', height: '130%' }} // optional
+            className="w-64  -translate-y-16"></Image>
+        </div>
+      </section>
+
+      <section className="text-center w-screen py-8 flex flex-col gap-2" style={{ backgroundColor: "#042D62" }}>
+        <h1 className="font-bold  text-4xl text-white">Hire Better. Faster. Smarter.
+        </h1>
+        <p className="font-semibold text-white">Designed for Partnerships. <span style={{ color: "#0F9ECA" }}>Built for Empowerment.</span></p>
+      </section>
+
+      <section style={{ backgroundColor: "#FFF4EF", position: "relative" }} className="min-h-screen pt-20">
+        <div className="mt-32 relative">
+          <div className="flex justify-center items-center  py-8" style={{ position: "relative" }}>
+            <Image src={illustration2} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '25%', height: '130%' }}></Image>
+            <Image src={illustration3} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '17%', height: '130%' }}></Image>
+            <Image src={illustration4} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '20%', height: '130%' }}></Image>
+            <Image src={illustration5} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '17%', height: '130%' }}></Image>
+            <Image src={illustration6} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '25%', height: '130%' }}></Image>
+
+            <p className="absolute bottom-6 left-28 font-bold">With our rockstar recruiter network</p>
+            <p className="absolute t-23 l-23 pl-10 text-center font-bold">Unlock access to a vast<br></br> pool of top-tier talent<br></br> that fits your needs</p>
+            <p className="absolute t-20 r-27 text-center font-bold">Discover top talent<br></br> efficiently, saving <br></br>time and energy</p>
+            <p className="absolute top-28 right-2 text-center font-bold text-sm">With ratings and skill <br></br>evaluations from trusted <br></br>and authentic recruiters</p>
+          </div>
+
+        </div>
+
+        <h1 className="font-bold  text-2xl text-white text-center" style={{ color: "#EF6C2D" }}>Endless Talent, Unmatched Quality</h1>
+
+        <div className="mt-32 mb-10 w-full flex justify-center gap-28 " >
+          <button style={{ backgroundColor: "#EF6C2D" }} className=" text-2xl px-6 py-2 rounded-full text-white font-bold">Post Your Jobs Now</button>
+          <button style={{ backgroundColor: "#EF6C2D" }} className=" text-2xl px-6 py-2 rounded-full text-white font-bold">Check All Jobs</button>
+          <button style={{ backgroundColor: "#EF6C2D" }} className=" text-2xl px-6 py-2 rounded-full text-white font-bold">Hurry! Refer Your Talents</button>
+        </div>
+      </section>
+
+      <section className="min-h-screen">
+        <div className="flex mt-48 relative justify-between items-center px-10 mb-10"> 
+          <Image src={illustration7} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '40%', height: '130%' }}></Image>
+          <Image src={illustration8} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '17%', height: '50%',left:"29%" ,top:"-24%"}} className="absolute "></Image>
+          <Image src={illustration9} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '20%', height: '30%',right:"27%" ,bottom:"28%" }} className="absolute"></Image>
+          <Image src={illustration10} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '40%', height: '130%' }}></Image>
+          <Image src={illustration11} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '25%', height: '130%' }} className="absolute"></Image>
+
+          <p className="absolute top-0 left-60 font-bold text-right">Get access to numerous job <br></br>opportunities</p>
+          <p className="absolute  text-center  w-full text-3xl font-bold" style={{ color:"#41757D", top:"30%"}} >Power to the Recruiters</p>
+          <p className="absolute b-20  text-center font-bold" style={{right:"40%"}}>With your expertise and our tools, ensuring every<br></br> talent you engage with gets a chance to shine.</p>
+          </div>
+
+          <div style={{backgroundColor:"#042D62"}} className="w-full py-10"><p className="text-center text-2xl font-bold text-white">Email us for any questions: info@reflesnse.com</p></div>
+      </section>
+
+      {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
           <code className="font-mono font-bold">src/app/page.tsx</code>
@@ -107,7 +194,7 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
     </main>
   );
 }

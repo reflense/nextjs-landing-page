@@ -77,7 +77,7 @@
     right: 12%;
 }
 
-@media screen and(min-width: 769px) {
+@media screen and (min-width: 769px) {
     
 
 .rightabc{
@@ -86,9 +86,16 @@
 .left1{
     top: 12%;
 }
+
+
 }
 
 
 .left1{
     top: 28%;
 }
+
+
+ .left2{
+    left: 32%;
+ }

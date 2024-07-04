@@ -84,10 +84,10 @@ export default function Home() {
           <Image src={illustration9} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '20%', height: '30%', right: "27%", bottom: "28%" }} className="absolute hidden md:block"></Image>
           <p className=" md:absolute text-center  w-full text-3xl font-bold text-[12px] sm:text-[14px] md:text-[18px]  lg:text-[26px] xl:text-[30px]" style={{ color: "#41757D", top: "30%" }} >Power to the Recruiters</p>
           <Image src={illustration10} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '40%', height: '130%' }}></Image>
-          <Image src={illustration11} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '20%', height: '100%', top: "-22%", right: "-4%" }} className="absolute hidden md:block"></Image>
+          {/* <Image src={illustration11} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '20%', height: '100%', top: "-22%", right: "-4%" }} className="absolute hidden md:block"></Image> */}
 
           <p className="absolute top-1/4 l-17 font-bold text-right text-[8px] sm:text-[10px] md:text-[10px]  lg:text-[12px] xl:text-[20px] md:top-0">Get access to numerous job <br></br>opportunities</p>
-          <p className="absolute b-20  text-center font-bold text-[6px] sm:text-[8px] md:text-[10px]  lg:text-[12px] xl:text-[18px] rightabc"  >With your expertise and our tools, ensuring every<br></br> talent you engage with gets a chance to shine.</p>
+          <p className="absolute b-20  text-center font-bold text-[6px] sm:text-[8px] md:text-[10px]  lg:text-[12px] xl:text-[18px] left2 absolute hidden md:block"  >With your expertise and our tools, ensuring every<br></br> talent you engage with gets a chance to shine.</p>
           <p className="absolute b-20   text-right top-0 md:t-14  font-bold text-[6px] l-58 md:right-0 sm:text-[8px] md:text-[10px]  lg:text-[12px] xl:text-[18px] " >You know your candidates better. Leverage it to find<br></br> perfect opportunities for them. Score based on job fit,<br></br> guiding effortlessly</p>
         </div>
 

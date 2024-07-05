@@ -12,6 +12,7 @@ import illustration9 from "../../public/images/section 3 3.svg";
 import illustration10 from "../../public/images/section 3 4.svg";
 import illustration11 from "../../public/images/section 3 5.svg";
 import logo from "../../public/images/Reflense (1).svg";
+import "../app/style.css";
 
 
 export default function Home() {
@@ -27,18 +28,18 @@ export default function Home() {
         priority
       /></header>
 
-      <section className="flex mt-10  w-screen px-20 mb-20">
-        <div className="w-6/12  h-96 flex flex-col justify-center items-center gap-5">
-          <p className="text-center font-black  text-3xl">Expand your<br></br> recruitment network <br></br>and find the perfect fit</p>
-          <button className="bg-blue-600 text-2xl px-6 py-2 rounded-full text-white bold " style={{ backgroundColor: "#042D62" }}>Let's Start Today</button>
+      <section className="flex mt-10  w-screen px-20 mb-0 md:mb-20 flex-col md:flex-row items-center">
+        <div className="w-6/12  md:h-96 flex flex-col justify-center items-center gap-5 ">
+          <p className="text-center font-black  2xl:text-3xl xl:text-2xl lg:text-lg md:text-base sm:text-sm">Expand your<br></br> recruitment network <br></br>and find the perfect fit</p>
+          <button className="bg-blue-600 2xl:text-2xl xl:text-lg lg-text-base md:text-sm sm:text-xs px-6 py-2 rounded-full text-white bold " style={{ backgroundColor: "#042D62" }}>Let's Start Today</button>
         </div>
         <div className="w-6/12  h-96 flex justify-center">
           <Image src="/images/section1 right.svg" alt="avc"
             width={0}
             height={0}
             sizes="100vw"
-            style={{ width: '100%', height: '130%' }} // optional
-            className="w-64  -translate-y-16"></Image>
+            
+            className="w-64  -translate-y-16 md:h-full md:w-full"></Image>
         </div>
       </section>
 
@@ -50,44 +51,47 @@ export default function Home() {
 
       <section style={{ backgroundColor: "#FFF4EF", position: "relative" }} className="min-h-screen pt-20">
         <div className="mt-32 relative">
-          <div className="flex justify-center items-center  py-8" style={{ position: "relative" }}>
+          <div className="flex flex-col md:flex-row justify-center items-center  py-8" style={{ position: "relative" }}>
             <Image src={illustration2} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '25%', height: '130%' }}></Image>
-            <Image src={illustration3} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '17%', height: '130%' }}></Image>
+             
+              <Image src={illustration3} alt="Illustrations" width={0} height={0} sizes="100vw" style={{width: '17%', height: '130%' }} className="md:block hidden "></Image>
+            
             <Image src={illustration4} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '20%', height: '130%' }}></Image>
-            <Image src={illustration5} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '17%', height: '130%' }}></Image>
+            <Image src={illustration5} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '17%', height: '130%' }} className="md:block hidden "></Image>
             <Image src={illustration6} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '25%', height: '130%' }}></Image>
 
-            <p className="absolute bottom-6 left-28 font-bold">With our rockstar recruiter network</p>
-            <p className="absolute t-23 l-23 pl-10 text-center font-bold">Unlock access to a vast<br></br> pool of top-tier talent<br></br> that fits your needs</p>
-            <p className="absolute t-20 r-27 text-center font-bold">Discover top talent<br></br> efficiently, saving <br></br>time and energy</p>
-            <p className="absolute top-28 right-2 text-center font-bold text-sm">With ratings and skill <br></br>evaluations from trusted <br></br>and authentic recruiters</p>
+            <p className="absolute text-center      font-bold  l-26 text-[8px] sm:text-[8px] md:text-[8px]  lg:text-[10px] xl:text-[14px] left1" >Unlock access to a vast<br></br> pool of top-tier talent<br></br> that fits your needs</p>
+            <p className="absolute bottom-6 l-7 font-medium    md:font-bold   xl:text-lg text-[8px] sm:text-[8px] md:text-[8px]  lg:text-[10px] xl:text-[14px]">With our rockstar recruiter network</p>
+            <p className="absolute  r-27 t-26  text-center font-bold text-[8px] sm:text-[8px] md:text-[12px]  lg:text-[10px] xl:text-[14px] xl:t-26 2xl:t-22">Discover top talent<br></br> efficiently, saving <br></br>time and energy</p>
+            <p className="absolute t-22 r-2 text-center font-bold   text-[8px] sm:text-[6px] md:text-[8px]  lg:text-[10px] xl:text-[14px] absolute hidden md:block">With ratings and skill <br></br>evaluations from trusted <br></br>and authentic recruiters</p>
           </div>
 
         </div>
 
         <h1 className="font-bold  text-2xl text-white text-center" style={{ color: "#EF6C2D" }}>Endless Talent, Unmatched Quality</h1>
 
-        <div className="mt-32 mb-10 w-full flex justify-center gap-28 " >
-          <button style={{ backgroundColor: "#EF6C2D" }} className=" text-2xl px-6 py-2 rounded-full text-white font-bold">Post Your Jobs Now</button>
-          <button style={{ backgroundColor: "#EF6C2D" }} className=" text-2xl px-6 py-2 rounded-full text-white font-bold">Check All Jobs</button>
-          <button style={{ backgroundColor: "#EF6C2D" }} className=" text-2xl px-6 py-2 rounded-full text-white font-bold">Hurry! Refer Your Talents</button>
+        <div className="mt-32 mb-10 w-full flex justify-center gap-10 md:gap-28 flex-col md:flex-row items-center" >
+          <button style={{ backgroundColor: "#EF6C2D" }} className=" text-2xl px-6 py-2 w-fit rounded-full text-white font-bold text-[6px] sm:text-[8px] md:text-[10px]  lg:text-[12px] xl:text-[18px]">Post Your Jobs Now</button>
+          <button style={{ backgroundColor: "#EF6C2D" }} className=" text-2xl px-6 py-2 w-fit rounded-full text-white font-bold text-[6px] sm:text-[8px] md:text-[10px]  lg:text-[12px] xl:text-[18px]">Check All Jobs</button>
+          <button style={{ backgroundColor: "#EF6C2D" }} className=" text-2xl px-6 py-2 w-fit rounded-full text-white font-bold text-[6px] sm:text-[8px] md:text-[10px]  lg:text-[12px] xl:text-[18px]">Hurry! Refer Your Talents</button>
         </div>
       </section>
 
       <section className="min-h-screen">
-        <div className="flex mt-48 relative justify-between items-center px-10 mb-10"> 
+        <div className="flex mt-48  flex-col md:flex-row relative justify-between items-center px-10 mb-10">
           <Image src={illustration7} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '40%', height: '130%' }}></Image>
-          <Image src={illustration8} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '17%', height: '50%',left:"29%" ,top:"-24%"}} className="absolute "></Image>
-          <Image src={illustration9} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '20%', height: '30%',right:"27%" ,bottom:"28%" }} className="absolute"></Image>
+          <Image src={illustration8} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '17%', height: '50%', left: "29%", top: "-24%" }} className="absolute hidden md:block"></Image>
+          <Image src={illustration9} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '20%', height: '30%', right: "27%", bottom: "28%" }} className="absolute hidden md:block"></Image>
+          <p className=" md:absolute text-center  w-full text-3xl font-bold text-[12px] sm:text-[14px] md:text-[18px]  lg:text-[26px] xl:text-[30px]" style={{ color: "#41757D", top: "30%" }} >Power to the Recruiters</p>
           <Image src={illustration10} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '40%', height: '130%' }}></Image>
-          <Image src={illustration11} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '25%', height: '130%' }} className="absolute"></Image>
+          {/* <Image src={illustration11} alt="Illustrations" width={0} height={0} sizes="100vw" style={{ width: '20%', height: '100%', top: "-22%", right: "-4%" }} className="absolute hidden md:block"></Image> */}
 
-          <p className="absolute top-0 left-60 font-bold text-right">Get access to numerous job <br></br>opportunities</p>
-          <p className="absolute  text-center  w-full text-3xl font-bold" style={{ color:"#41757D", top:"30%"}} >Power to the Recruiters</p>
-          <p className="absolute b-20  text-center font-bold" style={{right:"40%"}}>With your expertise and our tools, ensuring every<br></br> talent you engage with gets a chance to shine.</p>
-          </div>
+          <p className="absolute top-1/4 l-17 font-bold text-right text-[8px] sm:text-[10px] md:text-[10px]  lg:text-[12px] xl:text-[20px] md:top-0">Get access to numerous job <br></br>opportunities</p>
+          <p className="absolute b-20  text-center font-bold text-[6px] sm:text-[8px] md:text-[10px]  lg:text-[12px] xl:text-[18px] left2 absolute hidden md:block"  >With your expertise and our tools, ensuring every<br></br> talent you engage with gets a chance to shine.</p>
+          <p className="absolute b-20   text-right top-0 md:t-14  font-bold text-[6px] l-58 md:right-0 sm:text-[8px] md:text-[10px]  lg:text-[12px] xl:text-[18px] " >You know your candidates better. Leverage it to find<br></br> perfect opportunities for them. Score based on job fit,<br></br> guiding effortlessly</p>
+        </div>
 
-          <div style={{backgroundColor:"#042D62"}} className="w-full py-10"><p className="text-center text-2xl font-bold text-white">Email us for any questions: info@reflesnse.com</p></div>
+        <div style={{ backgroundColor: "#042D62" }} className="w-full py-10"><p className="text-center text-2xl font-bold text-white">Email us for any questions: info@reflesnse.com</p></div>
       </section>
 
       {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">

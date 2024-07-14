@@ -1,5 +1,5 @@
-# Stage 1: Build the application
-FROM node:18 AS builder
+# Stage 1: Build the React application
+FROM node:14 AS builder
 
 WORKDIR /app
 
@@ -10,22 +10,21 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
-# # Build the application
-# RUN npm run build
+# Build the React app
+RUN npm run build
 
-# Stage 2: Serve the application with a lightweight server
-FROM node:18-alpine
+# Stage 2: Serve the application with Nginx
+FROM nginx:alpine
 
-WORKDIR /app
+# Copy the build output from Stage 1 into the Nginx server's static content directory
+COPY --from=builder /app/build /usr/share/nginx/html
 
-# Copy package.json and package-lock.json
-COPY --from=builder /app/package.json /app/package-lock.json ./
+# Nginx configuration (optional)
+# If you have custom Nginx configurations, copy them into the container at this point
+# COPY nginx/nginx.conf /etc/nginx/nginx.conf
 
-# Install only production dependencies
-RUN npm install --only=production
-
-# Expose the port the app runs on
+# Expose port 80 to allow outside access to the web application
 EXPOSE 3000
 
-# Start the Next.js application
-CMD ["npm", "start"]
+# Start Nginx server
+CMD ["nginx", "-g", "daemon off;"]

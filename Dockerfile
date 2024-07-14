@@ -10,8 +10,8 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
-# Build the application
-RUN npm run build
+# # Build the application
+# RUN npm run build
 
 # Stage 2: Serve the application with a lightweight server
 FROM node:18-alpine

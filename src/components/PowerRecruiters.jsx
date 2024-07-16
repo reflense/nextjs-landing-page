@@ -6,7 +6,7 @@ import leftArrow from "../assets/svg/10.svg";
 import middleArrow from "../assets/svg/11.svg";
 const PowerRecruiters = () => {
   return (
-    <section className="xl:h-screen">
+    <section className="">
       <div className="max-w-[1660px] mx-auto px-6 py-12 sm:flex sm:items-center xl:h-[calc(100vh-64px)]">
         <div className="sm:w-[70%] sm:flex items-center relative w-full">
           <p className="text-[20px] text-[#41757D] font-bold whitespace-nowrap sm:hidden text-center mb-4">
@@ -18,7 +18,7 @@ const PowerRecruiters = () => {
             alt="scoreBasedImg"
           />
           <div className="text-center flex justify-center flex-col items-center">
-            <p className="text-black font-bold text-end text-xs xl:text-base relative">
+            <p className="text-black font-bold text-end text-base relative mr-3">
               Get access to numerous job <br className="hidden sm:block" />{" "}
               opportunities
             </p>
@@ -29,22 +29,22 @@ const PowerRecruiters = () => {
             />
           </div>
           <div className="text-center relative">
-            <p className="text-[20px] md:text-2xl xl:text-[32px] text-[#41757D] font-bold mb-20 whitespace-nowrap hidden sm:block">
-              Power to the Recruiters
-            </p>
+          <p className="text-[40px] md:text-4xl xl:text-[48px] text-[#41757D] font-bold mb-20 whitespace-nowrap hidden sm:block">
+            Power to the Recruiters
+          </p>
             <img
-              className="max-w-[90px] lg:max-w-[130px] h-max absolute top-[40px] right-[-15px] lg:right-[-25px] hidden sm:block"
+              className="max-w-[90px] lg:max-w-[130px] h-max absolute top-[40px] right-[-40px] lg:right-[-15px] hidden sm:block"
               src={middleArrow}
               alt="middleArrow"
             />
-            <p className="text-xs xl:text-base text-black font-bold sm:ml-[-170px]">
+            <p className="text-xl text-black font-bold sm:ml-[-170px]">
               With your expertise and our tools, ensuring every <br />
               talent you engage with gets a chance to shine.
             </p>
           </div>
         </div>
         <div className="sm:w-[30%] mt-5 sm:mt-0">
-          <p className="text-black font-bold text-center sm:text-end text-xs xl:text-base flex justify-center relative sm:max-w-[417px]">
+          <p className="text-black font-bold text-right sm:text-end text-xs xl:text-base flex justify-center relative sm:max-w-[417px] ml-8">
             You know your candidates better. Leverage it to find perfect
             opportunities for them. Score based on job fit, guiding effortlessly
           </p>
